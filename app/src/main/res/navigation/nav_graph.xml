@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.rickmortyapplication.ui.HomeFragment"
+        android:label="@string/home_fragment_label"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_CharacterFragment"
+            app:destination="@id/CharacterFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/CharacterFragment"
+        android:name="com.example.rickmortyapplication.ui.CharacterFragment"
+        android:label="@string/characters_fragment_label"
+        tools:layout="@layout/fragment_character">
+
+        <action
+            android:id="@+id/action_CharacterFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+
+        <action
+            android:id="@+id/action_CharacterFragment_to_CharacterDetailFragment"
+            app:destination="@id/CharacterDetailFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/CharacterDetailFragment"
+        android:name="com.example.rickmortyapplication.ui.CharacterDetailFragment"
+        android:label="@string/details_fragment_label"
+        tools:layout="@layout/fragment_character_detail">
+
+        <action
+            android:id="@+id/action_CharacterDetailFragment_to_CharacterFragment"
+            app:destination="@id/CharacterFragment" />
+
+    </fragment>
+
+</navigation>

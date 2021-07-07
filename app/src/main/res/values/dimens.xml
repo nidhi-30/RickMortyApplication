@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="margin">16dp</dimen>
+    <dimen name="margin_half">16dp</dimen>
+    <dimen name="card_corner">8dp</dimen>
+
+    <dimen name="small_font">16sp</dimen>
+    <dimen name="large_font">28sp</dimen>
+    <dimen name="medium_font">20sp</dimen>
+</resources>
